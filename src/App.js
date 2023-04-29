@@ -22,11 +22,13 @@ import {
   ColorPicker,
   ColorMapping,
   Editor,
-  Line
+  Line,
 } from "./pages";
 
+import { useStateContext } from "./contexts/ContextProvider";
+
 function App() {
-  const activeMenu = true;
+  const { activeMenu } = useStateContext();
 
   return (
     <div>
@@ -48,7 +50,10 @@ function App() {
               <Sidebar />
             </div>
           ) : (
-            <div className="w-0 dark:bg-secondary-dark-bg"> <Sidebar /> </div>
+            <div className="w-0 dark:bg-secondary-dark-bg">
+              {" "}
+              <Sidebar />{" "}
+            </div>
           )}
           <div
             className={`dark:bg-main-bg bg-main-bg min-h-screen w-full ${

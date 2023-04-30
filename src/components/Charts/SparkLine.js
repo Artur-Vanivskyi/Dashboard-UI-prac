@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
+import { SparklineComponent, Inject, SparklineTooltip } from '@syncfusion/ej2-react-charts';
 
-const SparkLine = () => {
+const SparkLine = ({currentColor, id, type, height, width, data, color}) => {
   return (
     <div>SparkLine</div>
   )
 }
 
-export default SparkLine
+export default SparkLine;

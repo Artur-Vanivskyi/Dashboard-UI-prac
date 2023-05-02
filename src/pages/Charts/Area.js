@@ -23,7 +23,7 @@ const Area = () => {
 
   return (
     <div className="m-4 md:m-10 mt-24 p-10 bg-white dark:bg-secondary-dark-bg rounded-3xl">
-      <Header category="Chart" title="Information Rate" />
+      <Header category="Area" title="Information Rate in Persantage" />
       <ChartComponent
         id="line-chart"
         height="420px"
